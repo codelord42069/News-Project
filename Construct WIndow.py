@@ -4,7 +4,7 @@ import tkinter.ttk as ttk
 import pygubu
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
-PROJECT_UI = os.path.join(PROJECT_PATH, "designerone.ui")
+PROJECT_UI = os.path.join(PROJECT_PATH, "WindowBlueprint.ui")
 
 class DesignerOneApp:
     def __init__(self, master=None):
