@@ -3,6 +3,15 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import pygubu
 
+
+#import bbcScraper
+#import dailymailscraper
+#import GuardianScraper
+#import independentscraper
+#import metroscraper
+
+
+
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 PROJECT_UI = os.path.join(PROJECT_PATH, "WindowBlueprint.ui")
 
