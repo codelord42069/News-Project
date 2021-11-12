@@ -30,7 +30,7 @@ for link in soup.find_all('a' , href=True, attrs={'class':'gs-c-promo-heading gs
   
 
 
-
+#nice
 
 
 
