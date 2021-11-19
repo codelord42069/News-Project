@@ -28,21 +28,9 @@ for link in soup.find_all('a' , href=True, attrs={'class':'gs-c-promo-heading gs
         headingText = ''
     records.append(headingText)
   
-
-
-#nice
-
-
-
-
-
 d = {'Headline': records, 'URL': hrefs}
-
 df = pd.DataFrame(data=d)
 
-
-
-#df['date'] = pd.to_datetime(df['date'])
 
 df.to_csv('bbc_headlines.csv', index=False, encoding='utf-8')
 
