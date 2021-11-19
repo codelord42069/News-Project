@@ -22,12 +22,12 @@ for link in soup.find_all('a' , href=True, attrs={'class':'u-faux-block-link__ov
 
    
 
-    heading = link.find('a', attrs={'class':'u-faux-block-link__overlay js-headline-text'})
+    heading = link
     if heading:
-        headingText = heading.string
+        headingText = heading.contents[0]
     else:
         headingText = ''
-    records.append(heading)
+    records.append(headingText)
   
 d = {'Headline': records, 'URL': hrefs}
 df = pd.DataFrame(data=d)
