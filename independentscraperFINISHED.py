@@ -18,7 +18,7 @@ for link in soup.find_all('a' , attrs={'class':'title'}):
 
 
     
-    link['href'] = 'https://www.dailymail.co.uk' + link['href'] 
+    link['href'] = 'https://www.independent.co.uk' + link['href'] 
     hrefs.append(link['href'])
 
    
