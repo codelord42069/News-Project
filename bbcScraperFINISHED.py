@@ -14,7 +14,7 @@ records = []
 for link in soup.find_all('a' , href=True, attrs={'class':'gs-c-promo-heading gs-o-faux-block-link__overlay-link gel-pica-bold nw-o-link-split__anchor'}):
 
     if link['href'][0] == 'h':
-        print(link['href'])
+    
         hrefs.append(link['href'])
 
     else:
@@ -35,5 +35,5 @@ df = pd.DataFrame(data=d)
 df.to_csv('bbc_headlines.csv', index=False, encoding='utf-8')
 
 
-print('Done')
+print('BBC Done')
 

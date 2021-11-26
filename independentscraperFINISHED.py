@@ -38,6 +38,8 @@ df = pd.DataFrame(data=d)
 
 df.to_csv('independent_headlines.csv', index=False, encoding='utf-8')
 
+print("Independent Done")
+
 
 
 
