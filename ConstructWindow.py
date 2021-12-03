@@ -9,7 +9,7 @@ import pygubu
 #import GuardianScraper
 #import independentscraper
 #import metroscraper
-
+    
 
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -23,8 +23,9 @@ class DesignerOneApp:
         self.mainwindow = builder.get_object('toplevel2', master)
         builder.connect_callbacks(self)
     
+
     def on_news1_clicked(self):
-        print('uno')
+        exec(open('ConstructWindowcopy.py').read())
         pass
 
     def on_news2_clicked(self):
