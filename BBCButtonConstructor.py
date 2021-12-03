@@ -4,7 +4,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 
 PROJECT_PATH = pathlib.Path(__file__).parent
-PROJECT_UI = PROJECT_PATH / "WindowBlueprint2.ui"
+PROJECT_UI = PROJECT_PATH / "BBCtkBlueprint.ui"
 
 
 class Windowblueprint2App:

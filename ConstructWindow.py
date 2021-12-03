@@ -9,7 +9,7 @@ import pygubu
 #import GuardianScraper
 #import independentscraper
 #import metroscraper
-    
+
 
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -25,7 +25,7 @@ class DesignerOneApp:
     
 
     def on_news1_clicked(self):
-        exec(open('ConstructWindowcopy.py').read())
+        exec(open('BBCButtonConstructor.py').read())
         pass
 
     def on_news2_clicked(self):
