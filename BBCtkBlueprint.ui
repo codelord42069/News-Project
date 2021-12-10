@@ -16,12 +16,246 @@
         </layout>
         <child>
           <object class="ttk.Label" id="label1">
-            <property name="textvariable">string:entry1_var</property>
+            <property name="textvariable">string:story1_var</property>
             <layout manager="place">
               <property name="anchor">nw</property>
-              <property name="relx">0.3</property>
+              <property name="relx">0.05</property>
               <property name="rely">0.1</property>
               <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button1">
+            <property name="command" type="command" cbtype="simple">on_story1_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.09</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label2">
+            <property name="textvariable">string:story2_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.2</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label3">
+            <property name="textvariable">string:story3_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.3</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label4">
+            <property name="textvariable">string:story4_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.4</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label5">
+            <property name="textvariable">string:story5_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.5</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label6">
+            <property name="textvariable">string:story6_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.6</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label7">
+            <property name="textvariable">string:story7_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.7</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label8">
+            <property name="textvariable">string:story8_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.8</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label9">
+            <property name="textvariable">string:story9_var</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.05</property>
+              <property name="rely">0.9</property>
+              <property name="width">300</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button2">
+            <property name="command" type="command" cbtype="simple">on_story2_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.19</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button3">
+            <property name="command" type="command" cbtype="simple">on_story4_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.39</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button4">
+            <property name="command" type="command" cbtype="simple">on_story3_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.29</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button5">
+            <property name="command" type="command" cbtype="simple">on_story5_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.49</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button6">
+            <property name="command" type="command" cbtype="simple">on_story6_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.59</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button7">
+            <property name="command" type="command" cbtype="simple">on_story7_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.69</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button8">
+            <property name="command" type="command" cbtype="simple">on_story8_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.79</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button9">
+            <property name="command" type="command" cbtype="simple">on_story9_click</property>
+            <property name="text" translatable="yes">Story link</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.75</property>
+              <property name="rely">0.89</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label10">
+            <property name="background">#ffffff</property>
+            <property name="font">{Arial} 20 {}</property>
+            <property name="text" translatable="yes">BBC Stories</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">0.35</property>
               <property name="x">0</property>
               <property name="y">0</property>
             </layout>
