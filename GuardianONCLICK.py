@@ -6,7 +6,7 @@ import csv
 from pandas import *
 import webbrowser
 
-data = read_csv("bbc_headlines.csv")
+data = read_csv("guardian_headlines.csv")
 headlinelist = data['Headline'].tolist()
 urlList = data['URL'].tolist()
 
@@ -55,7 +55,7 @@ class BbctkblueprintApp:
         self.label6 = ttk.Label(self.lowerframe)
 
         self.story6_var = tk.StringVar(value=headlinelist[5])
-        self.label6.configure(textvariable=self.story6_var) 
+        self.label6.configure(textvariable=self.story6_var)
 
         self.label6.place(anchor='nw', relx='0.05', rely='0.6', width='300', x='0', y='0')
         self.label7 = ttk.Label(self.lowerframe)
@@ -109,8 +109,8 @@ class BbctkblueprintApp:
         self.button9.place(anchor='nw', relx='0.75', rely='0.89', x='0', y='0')
         self.button9.configure(command=self.on_story9_click)
         self.label10 = ttk.Label(self.lowerframe)
-        self.label10.configure(background='#ffffff', font='{Arial} 20 {}', text='BBC Stories')
-        self.label10.place(anchor='nw', relx='0.35', x='0', y='0')
+        self.label10.configure(background='#ffffff', font='{Arial} 20 {}', text='Guardian Stories')
+        self.label10.place(anchor='nw', relx='0.3', x='0', y='0')
         self.lowerframe.configure(background='#ffffff', height='500', width='500')
         self.lowerframe.place(anchor='nw', x='0', y='0')
         self.uptop.configure(height='500', relief='flat', width='500')
