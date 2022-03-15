@@ -3,8 +3,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import pygubu
 from pandas import *
-import pathlib
-import webbrowser
+
 
 data = read_csv("bbc_headlines.csv")
 headlinelist = data['Headline'].tolist()
@@ -15,41 +14,116 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 PROJECT_UI = os.path.join(PROJECT_PATH, "WindowBlueprint.ui")
 
 
-class DesignerOneApp:
+feedbacksubmitted = False
+
+
+
+feedbacknums = [50]
+
+class WindowblueprintApp:
     def __init__(self, master=None):
         self.builder = builder = pygubu.Builder()
         builder.add_resource_path(PROJECT_PATH)
         builder.add_from_file(PROJECT_UI)
+
         self.mainwindow = builder.get_object('toplevel2', master)
-        builder.connect_callbacks(self)
         
+        self.slider_var = None
+        self.feedback_name = None
+        global feedbacksubmitted
+        feedbacksubmitted = False
+        
+
+
+
+
+        self.avgfeedback = (sum(feedbacknums)/len(feedbacknums))
+        builder.import_variables(self, ['slider_var', 'feedback_name'])
+
+
+        
+
+        
+        builder.connect_callbacks(self)
     
-
-    def on_news1_clicked(self):
-        print('uno')
-        pass  
-    
-
-    def on_news2_clicked(self):
-        print('dos')
-        pass
-
-    def on_news3_clicked(self):
-        print('tres')
-        pass
-
-    def on_news4_clicked(self):
-        print('cuatro')
-        pass
-
-    def on_papers_clicked(self):
-        print('papel')
-        pass
-
     def run(self):
         self.mainwindow.mainloop()
 
+    def on_news1_clicked(self):
+        pass
+
+    def on_news2_clicked(self):
+        pass
+
+    def on_news3_clicked(self):
+        pass
+
+    def on_news4_clicked(self):
+        pass
+
+    def on_papers_clicked(self):
+        pass
+
+    def slider_callback(self, scale_value):
+        pass
+
+    def on_submit_feedback_pressed(self):
+
+        global feedbacksubmitted
+
+        if feedbacksubmitted == False:
+
+            
+            print(self.builder.tkvariables['slider_var'].get())
+            print(self.builder.tkvariables['feedback_name'].get())
+
+            feedbackstring = 'Rated ' + str(self.builder.tkvariables['slider_var'].get()) + ' by ' + str(self.builder.tkvariables['feedback_name'].get())
+            print(feedbackstring)
+
+            print(str(feedbacksubmitted))
+
+            f = open("feedback.txt", "a")
+            f.write('\n')
+            f.write(feedbackstring)
+            f.close()
+
+
+            feedbacknums.append(int(self.builder.tkvariables['slider_var'].get()))
+
+            print('Average rating is ' + (str((sum(feedbacknums)/len(feedbacknums)))))
+            feedbacksubmitted = True
+
+
+        elif feedbacksubmitted == True:
+            print('Feedback already submitted ')
+
+
+
+
+
+        
+
+       
+
+        
+
+
+
+
+
+    
+
+
+        pass
+
 
 if __name__ == '__main__':
-    app = DesignerOneApp()
+    app = WindowblueprintApp()
     app.run()
+
+
+
+
+
+
+

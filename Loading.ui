@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <interface version="1.1">
-  <object class="tk.Toplevel" id="toplevel2">
+  <object class="tk.Toplevel" id="toplevel2">x
     <property name="height">500</property>
     <property name="relief">flat</property>
     <property name="width">500</property>

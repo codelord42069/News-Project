@@ -6,8 +6,6 @@ r = requests.get('https://www.bbc.co.uk/news')
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(r.text, 'html.parser')
 
-
-
 hrefs=[]
 records = []
 
@@ -31,9 +29,7 @@ for link in soup.find_all('a' , href=True, attrs={'class':'gs-c-promo-heading gs
 d = {'Headline': records, 'URL': hrefs}
 df = pd.DataFrame(data=d)
 
-
 df.to_csv('bbc_headlines.csv', index=False, encoding='utf-8')
-
 
 print('BBC Done')
 
