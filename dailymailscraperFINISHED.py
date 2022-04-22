@@ -1,10 +1,15 @@
 import requests
 import pandas as pd
 
+import timeit
+start = timeit.default_timer()
+
 r = requests.get('https://www.dailymail.co.uk/home/index.html')
 
 from bs4 import BeautifulSoup
-soup = BeautifulSoup(r.text, 'html.parser')
+soup = BeautifulSoup(r.text, 'html.parser') 
+
+
 
 hrefs=[]
 headlines=[]
@@ -23,7 +28,8 @@ df = pd.DataFrame(data=d)
 df.to_csv('dailymail_headlines.csv', index=False, encoding='utf-8')
 print("Daily Mail Done")
 
-
+stop = timeit.default_timer()
+print('Time: ', stop - start)  
 
 
 

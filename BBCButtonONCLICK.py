@@ -1,8 +1,6 @@
 import pathlib
-import pygubu
 import tkinter as tk
 import tkinter.ttk as ttk
-import csv
 from pandas import *
 import webbrowser
 
@@ -82,7 +80,7 @@ class BbctkblueprintApp:
         self.button2.configure(command=self.on_story2_click)
         self.button3 = ttk.Button(self.lowerframe)
         self.button3.configure(text='Story link')
-        self.button3.place(anchor='nw', relx='0.75', rely='0.39', x='0', y='0')
+        self.button3.place(anchor='nw', relx='0.75', rely='0.39', x='0', y='0') 
         self.button3.configure(command=self.on_story4_click)
         self.button4 = ttk.Button(self.lowerframe)
         self.button4.configure(text='Story link')
@@ -158,8 +156,6 @@ class BbctkblueprintApp:
         webbrowser.open(urlList[8])
         pass
 
-
 if __name__ == '__main__':
     app = BbctkblueprintApp()
     app.run()
-

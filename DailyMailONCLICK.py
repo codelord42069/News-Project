@@ -1,8 +1,6 @@
 import pathlib
-import pygubu
 import tkinter as tk
 import tkinter.ttk as ttk
-import csv
 from pandas import *
 import webbrowser
 
@@ -11,7 +9,7 @@ headlinelist = data['Headline'].tolist()
 urlList = data['URL'].tolist()
 
 PROJECT_PATH = pathlib.Path(__file__).parent
-PROJECT_UI = PROJECT_PATH / "DailymailBlueprint.ui"
+PROJECT_UI = PROJECT_PATH / "DailymailBlueprint.ui"\
 
 class DailyMailblueprintApp:
     def __init__(self, master=None):
@@ -129,7 +127,6 @@ class DailyMailblueprintApp:
         webbrowser.open(urlList[1])
         pass
 
-
     def on_story3_click(self):
         webbrowser.open(urlList[2])
         pass
@@ -162,4 +159,3 @@ class DailyMailblueprintApp:
 if __name__ == '__main__':
     app = DailyMailblueprintApp()
     app.run()
-
